@@ -1,0 +1,63 @@
+@media (max-width:900px) {
+	.skills-item {
+		flex-direction: column;
+	}
+
+	.skills-item__modal {
+		margin-right: 0;
+		margin-bottom: 60px;
+	}
+}
+
+@media (max-width:796px) {
+	.header-nav {
+		display: none;
+	}
+
+	.header-burger span {
+		visibility: visible ;
+	}
+
+	.burger-menu__nav {
+		visibility: visible;
+	}
+
+	.home-head__lang {
+		display: none;
+	}
+
+}
+
+@media (max-width:340px) {
+	.portfolio-content__item img {
+		width: 936px;
+	}
+} 
+
+@media (max-width:380px) {
+	.footer-content img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+	.home-head {
+		flex-direction: column;
+		align-items: start;
+
+		& h2 {
+			line-height: normal;
+		}
+
+		& p {
+			margin-top: 25px;
+			line-height: normal;
+		}
+		
+	}
+
+	.burger-lang {
+		right: -20px;
+	}
+}

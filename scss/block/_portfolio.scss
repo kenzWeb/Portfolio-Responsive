@@ -1,0 +1,64 @@
+.portfolio {
+	background: $bgc;
+	padding-bottom: 96px;
+	margin-bottom: 116px;
+}
+.portfolio-row {
+	display: flex;
+	flex-direction: column;
+}
+.portfolio-head {
+	padding-top: 112px;
+	margin-bottom: 47px;
+	text-align: center;
+}
+.portfolio-content {
+	text-align: center;
+}
+.portfolio-content__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	& img {
+		margin-bottom: 45px;
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		transition: all 0.2s ease-out;
+	}
+
+	& img:hover {
+		transform: scale(0.9);
+	}
+
+	& h2:not(:last-child) {
+		margin-bottom: 100px;
+	}
+
+	& h2 {
+		position: relative;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		font-weight: 500;
+		cursor: pointer;
+	}
+
+	& h2:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0%;
+		height: 1px;
+		background-color: $black;
+		transition: all 0.2s ease-out;
+	}
+
+	& h2:hover::after {
+		width: 100%;
+		left: 0;
+	}
+}

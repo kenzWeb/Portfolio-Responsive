@@ -1,0 +1,123 @@
+.home {
+	margin-top: 40px;
+	margin-bottom: 105px;
+}
+.home-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	& h2 {
+		max-width: 123px;
+		animation-duration: 1s;
+		animation-name: homeText;
+	}
+
+	@keyframes homeText {
+		0% {
+			transform: translateX(-100vh);
+		}
+	
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	& p {
+		font-size: 18px;
+		line-height: 22px;
+		max-width: 156px;
+		margin-top: 45px;
+		font-weight: 500;
+		animation-duration: 1.5s;
+		animation-name: homeSubText;
+	}
+
+	@keyframes homeSubText {
+		0% {
+			transform: translateX(100vh);
+		}
+	
+		100% {
+			transform: translateX(0);
+		}
+	}
+}
+.home-head__lang {
+	display: flex;
+	font-size: 16px;
+	line-height: 20px;
+	color: $gray;
+	transform: rotate(-90deg);
+
+	.firstLang {
+		margin-right: 10px;
+		color: $black;
+		animation-duration: 3s;
+		animation-name: langRU;
+	}
+
+	@keyframes langRU {
+		0% {
+			transform: translateY(500vh);
+		}
+	
+		100% {
+			transform: translate(0);
+		}
+	}
+
+	.firstLang:after {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 3px;
+		background-color: black;
+		bottom: 9px;
+		left: 20px;
+		transform: rotate(90deg);
+	}
+	
+	.secondLang {
+		margin-left: 5px;
+		animation-duration: 3s;
+		animation-name: langENG;
+	}
+
+	@keyframes langENG {
+		0% {
+			transform: translateY(-500vh);
+		}
+	
+		100% {
+			transform: translate(0);
+		}
+	}
+}
+
+.home-img {
+	margin-top: 30px;
+
+	& img {
+		transition: all 0.2s ease-out;
+		animation-duration: 4s;
+		animation-name: homeImg;
+	}
+
+	& img:hover {
+		transform: scale(0.99);
+	}
+
+}
+
+@keyframes homeImg {
+	0% {
+    transform: translateX(800vh);
+    width: 300%;
+  }
+
+  100% {
+    margin-right: 0%;
+    width: 100%;
+  }
+}

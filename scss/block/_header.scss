@@ -1,0 +1,21 @@
+header {
+	padding-top: 32px;
+}
+.header-nav {
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 22px;
+}
+.header-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-link {
+	color: $gray;
+	transition: color .1s ease-in-out;
+	font-weight: 700;
+	&:hover {
+		color: $black;
+	}
+}

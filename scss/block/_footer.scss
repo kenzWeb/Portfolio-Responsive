@@ -1,0 +1,60 @@
+footer {
+	margin-bottom: 40px;
+}
+
+.footer-head {
+	text-align: center;
+
+	& h2 {
+		font-size: 34px;
+		line-height: 42px;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	& p {
+		margin-bottom: 29px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	& a {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 13px 29px 12px 29px;
+		border-radius: 50px;
+		color: white;
+		background-color: $black;
+		transition: all .2s ease-in-out;
+	}
+
+	& a:hover {
+		background-color: $gray;
+	}
+}
+
+.footer-content {
+	margin-top: 85px;
+	display: flex;
+	justify-content: center;
+
+	& a {
+		transition: all 0.1s linear;
+	}
+
+	& a:not(:last-child) {
+		margin-right: 60px;
+	}
+
+	& a:hover {
+		transform: scale(0.9);
+	}
+}
+.footer-foot {
+	margin-top: 45px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 17px;
+	color: $gray;
+}

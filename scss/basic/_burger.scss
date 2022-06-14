@@ -1,0 +1,89 @@
+.header-burger {
+	position: fixed;
+	top: 60px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	z-index: 40;
+	cursor: pointer;
+	visibility: hidden;
+}
+.header-burger span {
+	position: fixed;
+	width: 30px;
+	height: 3px;
+	background: $black;
+	transition: all 0.4s ease;
+}
+.header-burger span::before,
+.header-burger span::after {
+	content: '';
+	position: absolute;
+	transition: all 0.4s ease;
+}
+.header-burger span::before {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: $black;
+	transform: translateY(-6px);
+}
+.header-burger span::after {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: $black;
+	transform: translateY(6px);
+}
+.click-burger span {
+	height: 0;
+}
+.click-burger span::before {
+	transform: rotate(-45deg);
+}
+.click-burger span::after {
+	transform: rotate(45deg);
+}
+.burger-menu__nav {
+	left: -500vh;
+	visibility: hidden;
+	padding-top: 40px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	transition: all 0.4s ease-in-out;
+	overflow: auto;
+}
+.burger-menu-link {
+	display: flex;
+	list-style: none;
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 66px;
+	padding-left: 30px;
+	font-size: 44px;
+}
+
+.modalActive {
+	left: 0;
+}
+
+.burger-lang {
+	color: $gray;
+	right: 30px;
+	top: 550px;
+	position: absolute;
+	padding-right: 0;
+	& h3 {
+		font-size: 34px;
+		cursor: pointer;
+		transform: rotate(-90deg);
+	}
+
+	& h3 span {
+		color: $black;
+	}
+}
