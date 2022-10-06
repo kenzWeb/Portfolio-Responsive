@@ -1,6 +1,6 @@
 *, *::after, *::before { box-sizing: border-box; }
 
-body { font-size: 42px; color: #070707; font-family: 'Gilroy'; font-weight: 700; }
+body { font-size: 42px; color: #070707; font-family: 'Gilroy'; font-weight: 700; overflow-x: hidden }
 
 .container { max-width: 940px; margin: 0 auto; padding-right: 30px; padding-left: 30px; }
 
